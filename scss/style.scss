@@ -188,7 +188,7 @@ header {
                             .dd-label {
                                 cursor: pointer;
                                 white-space: nowrap;
-                                font-weight: 700;
+                                font-weight: 500;
                                 font-size: 18.15px;
                                 color: transparent;
                                 position: relative;
@@ -208,7 +208,7 @@ header {
                     .label {
                         cursor: pointer;
                         white-space: nowrap;
-                        font-weight: 700;
+                        font-weight: 500;
                         font-size: 18.15px;
                         color: transparent;
                         position: relative;
@@ -234,6 +234,7 @@ header {
                 .btn {
                     min-width: 186px;
                     gap: 6px;
+                    font-weight: 500;
                     
                     img {
                         width: 20px;

@@ -170,7 +170,7 @@ header nav .right-side .navigation-items-w .nav-item.dropdown-nav .dropdown-cont
 header nav .right-side .navigation-items-w .nav-item.dropdown-nav .dropdown-content .dd-label {
   cursor: pointer;
   white-space: nowrap;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18.15px;
   color: transparent;
   position: relative;
@@ -185,7 +185,7 @@ header nav .right-side .navigation-items-w .nav-item.dropdown-nav .dropdown-cont
 header nav .right-side .navigation-items-w .nav-item .label {
   cursor: pointer;
   white-space: nowrap;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18.15px;
   color: transparent;
   position: relative;
@@ -204,6 +204,7 @@ header nav .right-side .navigation-items-w .nav-item .label .chevron-down {
 header nav .right-side .contact-us-btn-w .btn {
   min-width: 186px;
   gap: 6px;
+  font-weight: 500;
 }
 header nav .right-side .contact-us-btn-w .btn img {
   width: 20px;
