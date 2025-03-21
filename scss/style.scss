@@ -801,6 +801,8 @@ header {
 
     .testimonial-box {
         background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='19' ry='19' stroke='%23333' stroke-width='3' stroke-dasharray='6%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-color: rgba(255,255,255,0.5);
+        background-blend-mode: lighten;
         border-radius: 19px;
         min-height: 297px;
         width: 100%;
