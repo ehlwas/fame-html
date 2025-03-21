@@ -66,12 +66,16 @@ img {
   text-align: center;
 }
 
+.section-description {
+  font-weight: 400;
+  font-size: 21.07px;
+  line-height: 55.74px;
+  text-align: center;
+}
+
 header {
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: white;
+  border-bottom: 1px solid #E5E5E5;
   height: 95px;
   position: sticky;
   top: 0;
@@ -342,9 +346,11 @@ header nav .mobile-nav-btn {
   gap: 50px;
   flex-wrap: wrap;
   padding: 20px 50px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .featured-in-section .featured-in-wrapper .featured-in-item {
-  height: 55px;
+  height: 50px;
 }
 .featured-in-section .featured-in-wrapper .featured-in-item img {
   height: 100%;
@@ -400,9 +406,11 @@ header nav .mobile-nav-btn {
 .recent-events-section .recent-events-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-around;
   flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
   margin-top: 50px;
   padding-top: 50px;
 }
@@ -478,7 +486,8 @@ header nav .mobile-nav-btn {
 }
 .enroll-section .image-text-wrapper {
   background-color: #fff;
-  width: 533px;
+  max-width: 533px;
+  width: 100%;
   height: 376px;
   border-radius: 10px;
   position: absolute;
@@ -514,6 +523,7 @@ header nav .mobile-nav-btn {
   margin: 0 auto;
   height: 459px;
   position: sticky;
+  overflow: hidden;
 }
 .enroll-section .enroll-card ~ .enroll-card {
   margin-top: 50px;
@@ -606,6 +616,12 @@ header nav .mobile-nav-btn {
   gap: 20px;
   margin-top: 50px;
 }
+@media (max-width: 800px) {
+  .our-experience-section .img-grid-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+}
 .our-experience-section .img-grid-container .g-col .img-container {
   border-radius: 21px;
   overflow: hidden;
@@ -632,4 +648,77 @@ header nav .mobile-nav-btn {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.testimonial-section {
+  height: 802px;
+}
+.testimonial-section .swiper {
+  margin-top: 50px;
+  height: 510px;
+}
+.testimonial-section .swiper .swiper-wrapper {
+  align-items: center;
+}
+.testimonial-section .swiper .swiper-wrapper .swiper-slide {
+  width: 557px;
+}
+.testimonial-section .swiper .swiper-wrapper .swiper-slide.swiper-slide-active .testimonial-box {
+  background-image: none;
+  background-color: #FF3465;
+  color: #fff;
+  min-height: 403px;
+}
+.testimonial-section .swiper .swiper-controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.testimonial-section .swiper .swiper-controls-container .swiper-button-prev,
+.testimonial-section .swiper .swiper-controls-container .swiper-button-next {
+  position: unset;
+}
+.testimonial-section .testimonial-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.testimonial-section .testimonial-box {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='19' ry='19' stroke='%23333' stroke-width='3' stroke-dasharray='6%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 19px;
+  min-height: 297px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 44px;
+  position: relative;
+}
+.testimonial-section .testimonial-box .quote-sign {
+  font-family: Prata;
+  font-weight: 400;
+  font-size: 194.2px;
+  position: absolute;
+  top: 40px;
+  display: none;
+}
+.testimonial-section .testimonial-box .message {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 21.61px;
+  line-height: 30.15px;
+  text-align: center;
+}
+.testimonial-section .testimonial-box .name {
+  font-weight: 600;
+  font-size: 23.2px;
+  line-height: 32.38px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
