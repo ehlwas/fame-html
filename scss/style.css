@@ -693,13 +693,21 @@ header nav .mobile-nav-btn {
   justify-content: center;
   gap: 80px;
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
 .testimonial-section .swiper .swiper-controls-container .swiper-button-prev,
 .testimonial-section .swiper .swiper-controls-container .swiper-button-next {
   position: unset;
+}
+.testimonial-section .swiper .swiper-controls-container .swiper-button-prev::after,
+.testimonial-section .swiper .swiper-controls-container .swiper-button-next::after {
+  content: unset;
+}
+.testimonial-section .swiper .swiper-controls-container .swiper-button-prev img,
+.testimonial-section .swiper .swiper-controls-container .swiper-button-next img {
+  width: 62px;
 }
 .testimonial-section .testimonial-wrapper {
   max-width: 1400px;
