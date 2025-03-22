@@ -658,6 +658,9 @@ header nav .mobile-nav-btn {
 .testimonial-section .swiper {
   margin-top: 50px;
   height: 510px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .testimonial-section .swiper .swiper-wrapper {
   align-items: center;
@@ -729,6 +732,10 @@ header nav .mobile-nav-btn {
   gap: 20px;
   padding: 44px;
   position: relative;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .testimonial-section .testimonial-box .quote-sign {
   font-family: Prata;

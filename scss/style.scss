@@ -760,7 +760,8 @@ header {
     .swiper {
         margin-top: 50px;
         height: 510px;
-
+        user-select: none;
+        
         .swiper-wrapper {
             align-items: center;
             height: 403px !important;
@@ -842,7 +843,9 @@ header {
         gap: 20px;
         padding: 44px;
         position: relative;
-
+        cursor: default;
+        user-select: none;
+        
         .quote-sign {
             font-family: Prata;
             font-weight: 400;

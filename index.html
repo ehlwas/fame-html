@@ -10,6 +10,7 @@
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://kit.fontawesome.com/f5bf1013c9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@6.0.1/dist/vanilla/simpleParallaxVanilla.umd.min.js"></script>
 </head>
 <body>
     <header>
@@ -99,7 +100,7 @@
         <div class="page-content">
 
             <div class="banner-container" id="bannerContainer">
-                <img src="/assets/images/home/home.png" class="home-banner-img" />
+                <img src="/assets/images/home/home.png" class="home-banner-img" id="img-moving-vertical" />
                 
                 <div class="banner-text-wrapper">
                     <h1 class="title">
@@ -295,25 +296,25 @@
 
                     <div class="g-col first">
                         <div class="img-container img-one">
-                            <img src="./assets/images/home/exp-1.png" />
+                            <img src="./assets/images/home/exp-1.png" id="img-moving-vertical" />
                         </div>
 
                         <div class="img-container img-two">
-                            <img src="./assets/images/home/exp-2.png" />
+                            <img src="./assets/images/home/exp-2.png" id="img-moving-vertical" />
                         </div>
                     </div>
 
                     <div class="g-col second">
                         <div class="img-container img-three">
-                            <img src="./assets/images/home/exp-3.png" />
+                            <img src="./assets/images/home/exp-3.png" id="img-moving-vertical" />
                         </div>
 
                         <div class="img-container img-four">
-                            <img src="./assets/images/home/exp-4.png" />
+                            <img src="./assets/images/home/exp-4.png" id="img-moving-vertical" />
                         </div>
 
                         <div class="img-container img-five">
-                            <img src="./assets/images/home/exp-5.png" />
+                            <img src="./assets/images/home/exp-5.png" id="img-moving-vertical" />
                         </div>
                     </div>
                     
@@ -411,6 +412,6 @@
 
     <script src="/js/script.js"></script>
     <script type="module" src="/js/swiper-initial.js"></script>
-    <!-- <script type="text/javascript" src="/js/smooth-scroll.js"></script> -->
+    <script src="/js/parallax.js"></script>
 </body>
 </html>
