@@ -318,6 +318,10 @@ header {
     position: relative;
     overflow: hidden;
 
+    @media (max-width: 800px) {
+        height: 427px;
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -363,20 +367,39 @@ header {
         width: 100%;
         z-index: 2;
 
+        @media (max-width: 800px) {
+            padding-bottom: 0px;
+        }
+
         .title {
             font-weight: 400;
-            font-size: 54.27px;
+            // font-size: 54.27px;
+            font-size: 4.4vw;
             text-shadow: 0px 5.19px 5.19px #00000040;
+
+            @media (max-width: 800px) {
+                font-size: 30px;
+            }
 
             strong {
                 font-weight: 600;
+
+                @media (max-width: 800px) {
+                    background: #FF3465E5;
+                    padding: 0 5px;
+                }
             }
         }
 
         .description {
             font-weight: 500;
-            font-size: 24.46px;
+            // font-size: 24.46px;
+            font-size: 1.9vw;
             text-shadow: 0px 5.19px 5.19px #00000040;
+
+            @media (max-width: 800px) {
+                font-size: 18px;
+            }
         }
 
         .btn-container {
@@ -386,8 +409,18 @@ header {
             gap: 30px;
             margin-top: 20px;
 
+            @media (max-width: 800px) {
+                gap: 12px;
+                margin-top: 10px;
+            }
+
             .btn {
                 gap: 10px;
+
+                @media (max-width: 800px) {
+                    font-size: 13.63px;
+                    font-weight: 500;
+                }
             }
         }
     }
@@ -400,12 +433,13 @@ header {
     height: 100px;
     position: relative;
     padding: 20px 50px;
-    min-height: 180px;
+    min-height: 120px;
 
     .featured-in-wrapper {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 50px;
         // flex-wrap: wrap;
         // max-width: 1400px;
         // margin: 0 auto;
@@ -417,7 +451,7 @@ header {
 
         @media (max-width: 1400px) {
             left: unset;
-            gap: 50px;
+            justify-content: space-around;
             animation: marquee 10s linear infinite;
         }
 
@@ -566,6 +600,13 @@ header {
     padding: 73px 0;
     position: relative;
 
+    .section-title {
+
+        @media (max-width: 800px) {
+            font-size: 30px;
+        }
+    }
+
     .recent-events-container {
         display: flex;
         align-items: center;
@@ -576,6 +617,10 @@ header {
         margin: 0 auto;
         margin-top: 50px;
         padding-top: 50px;
+
+        @media (max-width: 800px) {
+            padding-top: 0;
+        }
 
         .recent-events-box {
             width: 381px;
@@ -620,15 +665,30 @@ header {
 }
 
 .enroll-section {
+    background-color: #FAFAFA;
     min-height: 2100px;
     padding: 71px 0;
     padding-bottom: 100px;
     position: relative;
 
+    @media (max-width: 800px) {
+        min-height: unset;        
+    }
+
     .section-title {
         margin-bottom: 50px;
         position: sticky;
         top: 130px;
+
+        @media (max-width: 800px) {
+            font-size: 30px;
+            position: static;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            line-height: unset;
+        }
     }    
 
     .page-t {
@@ -707,6 +767,12 @@ header {
         position: sticky;
         overflow: hidden;
         // position: relative;
+
+        @media (max-width: 800px) {
+            position: relative;
+            top: unset !important;
+            overflow: hidden;
+        }
 
         & ~ .enroll-card {
             margin-top: 50px;
@@ -788,6 +854,10 @@ header {
         bottom: -80px;
         left: 50%;
         transform: translateX(-50%);
+
+        @media (max-width: 800px) {
+            bottom: -50px;
+        }
 
         a {
             color: #2B2B2B;
@@ -1082,5 +1152,10 @@ footer {
             height: 27px;
             width: auto;
         }
+    }
+
+    .line-c {
+        height: 7px;
+        background: linear-gradient(90deg, rgba(173, 46, 233, 0.4) 0%, rgba(204, 204, 204, 0.4) 48.5%, rgba(173, 46, 233, 0.4) 97.5%);
     }
 }

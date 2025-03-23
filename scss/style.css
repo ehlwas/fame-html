@@ -281,6 +281,11 @@ header nav .mobile-nav-btn {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 800px) {
+  .banner-container {
+    height: 427px;
+  }
+}
 .banner-container::after {
   content: "";
   position: absolute;
@@ -323,18 +328,39 @@ header nav .mobile-nav-btn {
   width: 100%;
   z-index: 2;
 }
+@media (max-width: 800px) {
+  .banner-container .banner-text-wrapper {
+    padding-bottom: 0px;
+  }
+}
 .banner-container .banner-text-wrapper .title {
   font-weight: 400;
-  font-size: 54.27px;
+  font-size: 4.4vw;
   text-shadow: 0px 5.19px 5.19px rgba(0, 0, 0, 0.2509803922);
+}
+@media (max-width: 800px) {
+  .banner-container .banner-text-wrapper .title {
+    font-size: 30px;
+  }
 }
 .banner-container .banner-text-wrapper .title strong {
   font-weight: 600;
 }
+@media (max-width: 800px) {
+  .banner-container .banner-text-wrapper .title strong {
+    background: rgba(255, 52, 101, 0.8980392157);
+    padding: 0 5px;
+  }
+}
 .banner-container .banner-text-wrapper .description {
   font-weight: 500;
-  font-size: 24.46px;
+  font-size: 1.9vw;
   text-shadow: 0px 5.19px 5.19px rgba(0, 0, 0, 0.2509803922);
+}
+@media (max-width: 800px) {
+  .banner-container .banner-text-wrapper .description {
+    font-size: 18px;
+  }
 }
 .banner-container .banner-text-wrapper .btn-container {
   display: flex;
@@ -343,8 +369,20 @@ header nav .mobile-nav-btn {
   gap: 30px;
   margin-top: 20px;
 }
+@media (max-width: 800px) {
+  .banner-container .banner-text-wrapper .btn-container {
+    gap: 12px;
+    margin-top: 10px;
+  }
+}
 .banner-container .banner-text-wrapper .btn-container .btn {
   gap: 10px;
+}
+@media (max-width: 800px) {
+  .banner-container .banner-text-wrapper .btn-container .btn {
+    font-size: 13.63px;
+    font-weight: 500;
+  }
 }
 
 .featured-in-section {
@@ -354,12 +392,13 @@ header nav .mobile-nav-btn {
   height: 100px;
   position: relative;
   padding: 20px 50px;
-  min-height: 180px;
+  min-height: 120px;
 }
 .featured-in-section .featured-in-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -369,7 +408,7 @@ header nav .mobile-nav-btn {
 @media (max-width: 1400px) {
   .featured-in-section .featured-in-wrapper {
     left: unset;
-    gap: 50px;
+    justify-content: space-around;
     animation: marquee 10s linear infinite;
   }
 }
@@ -506,6 +545,11 @@ header nav .mobile-nav-btn {
   padding: 73px 0;
   position: relative;
 }
+@media (max-width: 800px) {
+  .recent-events-section .section-title {
+    font-size: 30px;
+  }
+}
 .recent-events-section .recent-events-container {
   display: flex;
   align-items: center;
@@ -516,6 +560,11 @@ header nav .mobile-nav-btn {
   margin: 0 auto;
   margin-top: 50px;
   padding-top: 50px;
+}
+@media (max-width: 800px) {
+  .recent-events-section .recent-events-container {
+    padding-top: 0;
+  }
 }
 .recent-events-section .recent-events-container .recent-events-box {
   width: 381px;
@@ -550,15 +599,32 @@ header nav .mobile-nav-btn {
 }
 
 .enroll-section {
+  background-color: #FAFAFA;
   min-height: 2100px;
   padding: 71px 0;
   padding-bottom: 100px;
   position: relative;
 }
+@media (max-width: 800px) {
+  .enroll-section {
+    min-height: unset;
+  }
+}
 .enroll-section .section-title {
   margin-bottom: 50px;
   position: sticky;
   top: 130px;
+}
+@media (max-width: 800px) {
+  .enroll-section .section-title {
+    font-size: 30px;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: unset;
+  }
 }
 .enroll-section .page-t {
   color: #2B2B2B;
@@ -628,6 +694,13 @@ header nav .mobile-nav-btn {
   position: sticky;
   overflow: hidden;
 }
+@media (max-width: 800px) {
+  .enroll-section .enroll-card {
+    position: relative;
+    top: unset !important;
+    overflow: hidden;
+  }
+}
 .enroll-section .enroll-card ~ .enroll-card {
   margin-top: 50px;
 }
@@ -693,6 +766,11 @@ header nav .mobile-nav-btn {
   bottom: -80px;
   left: 50%;
   transform: translateX(-50%);
+}
+@media (max-width: 800px) {
+  .enroll-section .enroll-link-c {
+    bottom: -50px;
+  }
 }
 .enroll-section .enroll-link-c a {
   color: #2B2B2B;
@@ -943,4 +1021,8 @@ footer .copy-right {
 footer .copy-right .div-logo {
   height: 27px;
   width: auto;
+}
+footer .line-c {
+  height: 7px;
+  background: linear-gradient(90deg, rgba(173, 46, 233, 0.4) 0%, rgba(204, 204, 204, 0.4) 48.5%, rgba(173, 46, 233, 0.4) 97.5%);
 }/*# sourceMappingURL=style.css.map */
