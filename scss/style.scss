@@ -600,6 +600,10 @@ header {
     padding: 73px 0;
     position: relative;
 
+    @media (max-width: 800px) {
+        min-height: unset;
+    }
+
     .section-title {
 
         @media (max-width: 800px) {
@@ -662,6 +666,66 @@ header {
             }
         }
     }
+
+    .swiper {
+        margin-top: 50px;
+
+        .swiper-wrapper {
+
+            @media (min-width: 1200px) {
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .swiper-slide {
+                
+                @media (min-width: 1200px) {
+                    width: 381px !important;
+                }
+            }
+        }
+    }
+    
+    .recent-events-box {
+        width: 381px;
+        margin: 0 auto;
+
+        .img-container {
+            border-radius: 10px 10px 0 0;
+            width: 380px;
+            height: 213px;
+            overflow: hidden;
+        }
+
+        .details-container {
+
+            .re-date {
+                font-weight: 500;
+                font-size: 21.68px;
+                line-height: 30.43px;
+                margin-top: 20px;
+            }
+
+            .re-title {
+                font-weight: 600;
+                font-size: 32.52px;
+                line-height: 44.88px;
+                margin-top: 12px;
+            }
+
+            .re-description {
+                font-weight: 400;
+                font-size: 18.07px;
+                line-height: 28.98px;
+                margin-top: 20px;
+            }
+
+            .btn {
+                width: 186px;
+                margin-top: 20px;
+            }
+        }
+    }
 }
 
 .enroll-section {
@@ -682,7 +746,7 @@ header {
 
         @media (max-width: 800px) {
             font-size: 30px;
-            position: static;
+            // position: static;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -732,6 +796,10 @@ header {
         top: 42px;
         right: 180px;
 
+        @media (max-width: 800px) {
+            display: none;            
+        }
+
         .img-container {
             border-radius: 10px;
             height: 100%;
@@ -768,11 +836,15 @@ header {
         overflow: hidden;
         // position: relative;
 
-        @media (max-width: 800px) {
-            position: relative;
-            top: unset !important;
-            overflow: hidden;
+        @media (max-width: 1256px) {
+            margin: 0 30px;
         }
+
+        // @media (max-width: 800px) {
+        //     position: relative;
+        //     top: unset !important;
+        //     overflow: unset;
+        // }
 
         & ~ .enroll-card {
             margin-top: 50px;
@@ -856,7 +928,7 @@ header {
         transform: translateX(-50%);
 
         @media (max-width: 800px) {
-            bottom: -50px;
+            bottom: -60px;
         }
 
         a {
@@ -867,6 +939,10 @@ header {
             text-align: center;
             display: flex;
             align-items: center;
+
+            @media (max-width: 800px) {
+                white-space: nowrap;                
+            }
 
             .fa-chevron-right {
                 font-size: 22px;
@@ -879,6 +955,16 @@ header {
 .our-experience-section {
     min-height: 1237px;
     padding-top: 56px;
+
+    .section-title {
+
+        @media (max-width: 800px) {
+            font-size: 30px;
+            width: 362px;
+            margin: 0 auto;
+            line-height: unset;
+        }
+    }
 
     .img-grid-container {
         display: grid;
@@ -899,6 +985,11 @@ header {
             .img-container {
                 border-radius: 21px;
                 overflow: hidden;
+
+                @media (max-width: 800px) {
+                    height: unset !important;
+                    margin: 0 30px;
+                }
 
                 & ~ .img-container {
                     margin-top: 20px;
@@ -934,18 +1025,52 @@ header {
 }
 
 .testimonial-section {
-    height: 802px;
+    background-color: #F4F4F4;
+    // height: 802px;
+    padding: 73px 0;
+    
+    @media (max-width: 800px) {
+        min-height: 526px;
+        height: 100%;
+        padding: 44px 0;
+    }
+
+    .section-title {
+        
+        @media (max-width: 800px) {
+            font-size: 30px;
+        }
+    }
+
+    .section-description {
+
+        @media (max-width: 800px) {
+            font-size: 18px;
+            line-height: 30px;
+            width: 280px;
+            margin: 0 auto;
+        }
+    }
 
     .swiper {
         margin-top: 50px;
-        height: 440px;
         user-select: none;
+        height: 440px;
+        
+        @media (max-width: 800px) {
+            height: 400px;
+            margin-top: 30px;
+        }
 
         .swiper-wrapper {
             align-items: flex-end;
             
             .swiper-slide {
                 width: 557px;
+
+                @media (max-width: 800px) {
+                    width: 367px;
+                }
 
                 &.swiper-slide-active {
 
@@ -989,6 +1114,10 @@ header {
             left: 50%;
             transform: translateX(-50%);
 
+            @media (max-width: 800px) {
+                bottom: 4px;
+            }
+
             .swiper-button-prev,
             .swiper-button-next {
                 position: unset;
@@ -1027,9 +1156,15 @@ header {
         position: relative;
         cursor: default;
         user-select: none;
+
+        @media (max-width: 800px) {
+            padding: 20px;            
+        }
         
         .quote-sign {
             display: none;
+            width: 47px;
+            height: auto;
         }
 
         .message {
@@ -1038,6 +1173,10 @@ header {
             font-size: 21.61px;
             line-height: 30.15px;
             text-align: center;
+
+            @media (max-width: 800px) {
+                font-size: 18px;
+            }
         }
 
         .name {
@@ -1045,6 +1184,10 @@ header {
             font-size: 23.2px;
             line-height: 32.38px;
             text-align: center;
+            
+            @media (max-width: 800px) {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -1054,6 +1197,11 @@ footer {
     color: #fff;
     height: 673px;
     position: relative;
+    text-align: center;
+
+    @media (max-width: 800px) {
+        height: auto;
+    }
 
     .bg-footer {
         position: absolute;
@@ -1068,12 +1216,22 @@ footer {
         padding: 50px 69px;
         position: relative;
         z-index: 1;
+
+        @media (max-width: 800px) {
+            padding: 50px 20px;
+        }
     }
 
     .row-f {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
     }
 
     .ready {
@@ -1082,12 +1240,26 @@ footer {
         font-size: 39.98px;
         line-height: 100%;
         text-shadow: 0px 4.81px 4.81px #00000040;
+
+        @media (max-width: 800px) {
+            font-size: 30px;
+            line-height: unset;
+            width: 234px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
     }
 
     .get-in {
         font-weight: 700;
         font-size: 64.81px;
         line-height: 106.67px;
+
+        @media (max-width: 800px) {
+            font-size: 50px;
+            line-height: 58.7px;
+            margin-bottom: 20px;
+        }
     }
 
     .contact-no {
@@ -1095,6 +1267,11 @@ footer {
         font-size: 45.37px;
         line-height: 100%;
         text-shadow: 0px 4.81px 4.81px #00000040;
+
+        @media (max-width: 800px) {
+            font-size: 30px;
+            line-height: unset;
+        }
     }
 
     .contact-group {
@@ -1102,6 +1279,10 @@ footer {
         align-items: center;
         gap: 8px;
         margin-top: 28px;
+
+        @media (max-width: 800px) {
+            justify-content: center;
+        }
 
         img {
             height: 50px;
@@ -1114,8 +1295,15 @@ footer {
         font-weight: 500;
         font-size: 24.33px;
         line-height: 19.6px;
-        text-align: right;
         margin-bottom: 26px;
+        text-align: right;
+        
+        @media (max-width: 800px) {
+            font-size: 24.33px;
+            line-height: 31px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
     }
 
     .links-list {
@@ -1124,8 +1312,13 @@ footer {
             font-weight: 400;
             font-size: 24.33px;
             line-height: 19.6px;
-            text-align: right;
             margin-bottom: 16px;
+            text-align: right;
+
+            @media (max-width: 800px) {
+                font-size: 24.33px;
+                text-align: center;
+            }
         }
     }
 
@@ -1145,12 +1338,26 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 4px;
         margin-top: 40px;
+
+        @media (max-width: 800px) {
+            font-size: 18.14px;
+            width: 250px;
+            margin: 0 auto;
+            margin-top: 40px;
+            flex-direction: column;
+            gap: 8px;
+        }
 
         .div-logo {
             height: 27px;
             width: auto;
+        }
+
+        .powered-by {
+            display: flex;
+            align-items: center;
         }
     }
 
