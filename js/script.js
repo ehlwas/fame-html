@@ -9,3 +9,20 @@ mobileNavBtn.addEventListener('click', () => {
 mobileCloseBtn.addEventListener('click', () => {
     navContainer.classList.remove('show');
 });
+
+
+
+
+let lastScrollY = window.scrollY;
+const navbar = document.getElementById('headerNavigation');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > lastScrollY) {
+    // Scrolling Down
+    navbar.style.top = '-150px';
+  } else {
+    // Scrolling Up
+    navbar.style.top = '0';
+  }
+  lastScrollY = window.scrollY;
+});
