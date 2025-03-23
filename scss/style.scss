@@ -330,9 +330,20 @@ header {
         z-index: 1;
     }
 
-    .home-banner-img {
+    .simpleParallax {
+        height: 100%;
         width: 100%;
-        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .home-banner-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
     .banner-text-wrapper {
@@ -384,20 +395,80 @@ header {
 
 .featured-in-section {
     border-bottom: 3.89px solid #2B2B2B;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    padding: 20px 50px;
+    min-height: 180px;
 
     .featured-in-wrapper {
-        min-height: 180px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        gap: 50px;
-        flex-wrap: wrap;
-        padding: 20px 50px;
-        max-width: 1400px;
-        margin: 0 auto;
+        // flex-wrap: wrap;
+        // max-width: 1400px;
+        // margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+
+        @media (max-width: 1400px) {
+            left: unset;
+            gap: 50px;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0%) translateY(-50%);
+            }
+            100% {
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
 
         .featured-in-item {
-            height: 50px;
+
+            &.fi-1 {
+                width: 203px;
+                height: 30px;
+            }
+
+            &.fi-2 {
+                width: 128px;
+                height: 34px;
+            }
+
+            &.fi-3 {
+                width: 115px;
+                height: 42px;
+            }
+
+            &.fi-4 {
+                width: 188px;
+                height: 33px;
+            }
+
+            &.fi-5 {
+                width: 102px;
+                height: 38px;
+            }
+
+            &.fi-6 {
+                width: 134px;
+                height: 55px;
+            }
+
+            &.duplicates {
+                display: none;
+
+                @media (max-width: 1400px) {
+                    display: block;
+                }
+            }
 
             img {
                 height: 100%;
@@ -442,7 +513,6 @@ header {
 }
 
 .home-video-section {
-    border: 1px solid black;
     background-image: url('/assets/images/home/bg-rectangle.png');
     background-position: bottom;
     background-size: 100% 50%;
@@ -558,7 +628,7 @@ header {
     .section-title {
         margin-bottom: 50px;
         position: sticky;
-        top: 71px;
+        top: 130px;
     }    
 
     .page-t {
@@ -644,7 +714,7 @@ header {
 
         &.card-one {
             background: linear-gradient(227.58deg, #FFFFFF -124.77%, #FF7D9D 103.08%);
-            top: 200px;
+            top: 230px;
 
             .page-t {
                 top: 31px;
@@ -654,7 +724,7 @@ header {
 
         &.card-two {
             background: linear-gradient(47.58deg, #FFFFFF -3.08%, #FF7D9D 224.77%);
-            top: 250px;
+            top: 290px;
 
             .page-t {
                 top: 31px;
@@ -690,7 +760,7 @@ header {
 
         &.card-three {
             background: linear-gradient(99.17deg, #FFFFFF -36.01%, #FF7D9D 121.81%);
-            top: 300px;
+            top: 350px;
 
             .page-t {
                 top: 31px;
@@ -798,12 +868,11 @@ header {
 
     .swiper {
         margin-top: 50px;
-        height: 510px;
+        height: 440px;
         user-select: none;
 
         .swiper-wrapper {
-            align-items: center;
-            height: 403px !important;
+            align-items: flex-end;
             
             .swiper-slide {
                 width: 557px;
@@ -846,7 +915,7 @@ header {
             justify-content: center;
             gap: 50px;
             position: absolute;
-            bottom: 30px;
+            bottom: 10px;
             left: 50%;
             transform: translateX(-50%);
 

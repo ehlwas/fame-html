@@ -291,9 +291,20 @@ header nav .mobile-nav-btn {
   background: linear-gradient(180deg, rgba(48, 8, 67, 0.4) 0%, rgba(0, 0, 0, 0.3) 52%, rgba(48, 8, 67, 0.6) 100%);
   z-index: 1;
 }
-.banner-container .home-banner-img {
+.banner-container .simpleParallax {
+  height: 100%;
   width: 100%;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.banner-container .home-banner-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .banner-container .banner-text-wrapper {
   color: white;
@@ -338,20 +349,69 @@ header nav .mobile-nav-btn {
 
 .featured-in-section {
   border-bottom: 3.89px solid #2B2B2B;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  padding: 20px 50px;
+  min-height: 180px;
 }
 .featured-in-section .featured-in-wrapper {
-  min-height: 180px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 50px;
-  flex-wrap: wrap;
-  padding: 20px 50px;
-  max-width: 1400px;
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
 }
-.featured-in-section .featured-in-wrapper .featured-in-item {
-  height: 50px;
+@media (max-width: 1400px) {
+  .featured-in-section .featured-in-wrapper {
+    left: unset;
+    gap: 50px;
+    animation: marquee 10s linear infinite;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%) translateY(-50%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+.featured-in-section .featured-in-wrapper .featured-in-item.fi-1 {
+  width: 203px;
+  height: 30px;
+}
+.featured-in-section .featured-in-wrapper .featured-in-item.fi-2 {
+  width: 128px;
+  height: 34px;
+}
+.featured-in-section .featured-in-wrapper .featured-in-item.fi-3 {
+  width: 115px;
+  height: 42px;
+}
+.featured-in-section .featured-in-wrapper .featured-in-item.fi-4 {
+  width: 188px;
+  height: 33px;
+}
+.featured-in-section .featured-in-wrapper .featured-in-item.fi-5 {
+  width: 102px;
+  height: 38px;
+}
+.featured-in-section .featured-in-wrapper .featured-in-item.fi-6 {
+  width: 134px;
+  height: 55px;
+}
+.featured-in-section .featured-in-wrapper .featured-in-item.duplicates {
+  display: none;
+}
+@media (max-width: 1400px) {
+  .featured-in-section .featured-in-wrapper .featured-in-item.duplicates {
+    display: block;
+  }
 }
 .featured-in-section .featured-in-wrapper .featured-in-item img {
   height: 100%;
@@ -391,7 +451,6 @@ header nav .mobile-nav-btn {
 }
 
 .home-video-section {
-  border: 1px solid black;
   background-image: url("/assets/images/home/bg-rectangle.png");
   background-position: bottom;
   background-size: 100% 50%;
@@ -499,7 +558,7 @@ header nav .mobile-nav-btn {
 .enroll-section .section-title {
   margin-bottom: 50px;
   position: sticky;
-  top: 71px;
+  top: 130px;
 }
 .enroll-section .page-t {
   color: #2B2B2B;
@@ -574,7 +633,7 @@ header nav .mobile-nav-btn {
 }
 .enroll-section .enroll-card.card-one {
   background: linear-gradient(227.58deg, #FFFFFF -124.77%, #FF7D9D 103.08%);
-  top: 200px;
+  top: 230px;
 }
 .enroll-section .enroll-card.card-one .page-t {
   top: 31px;
@@ -582,7 +641,7 @@ header nav .mobile-nav-btn {
 }
 .enroll-section .enroll-card.card-two {
   background: linear-gradient(47.58deg, #FFFFFF -3.08%, #FF7D9D 224.77%);
-  top: 250px;
+  top: 290px;
 }
 .enroll-section .enroll-card.card-two .page-t {
   top: 31px;
@@ -611,7 +670,7 @@ header nav .mobile-nav-btn {
 }
 .enroll-section .enroll-card.card-three {
   background: linear-gradient(99.17deg, #FFFFFF -36.01%, #FF7D9D 121.81%);
-  top: 300px;
+  top: 350px;
 }
 .enroll-section .enroll-card.card-three .page-t {
   top: 31px;
@@ -701,14 +760,13 @@ header nav .mobile-nav-btn {
 }
 .testimonial-section .swiper {
   margin-top: 50px;
-  height: 510px;
+  height: 440px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
 .testimonial-section .swiper .swiper-wrapper {
-  align-items: center;
-  height: 403px !important;
+  align-items: flex-end;
 }
 .testimonial-section .swiper .swiper-wrapper .swiper-slide {
   width: 557px;
@@ -740,7 +798,7 @@ header nav .mobile-nav-btn {
   justify-content: center;
   gap: 50px;
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
 }
