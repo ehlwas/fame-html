@@ -2,12 +2,16 @@ const mobileNavBtn = document.querySelector('#mobileNavBtn');
 const mobileCloseBtn = document.querySelector('#mobileCloseBtn');
 const navContainer = document.querySelector('#navContainer');
 
+const body = document.querySelector('body');
+
 mobileNavBtn.addEventListener('click', () => {
-    navContainer.classList.add('show');
+  navContainer.classList.add('show');
+  body.style.overflow = 'hidden';
 });
 
 mobileCloseBtn.addEventListener('click', () => {
-    navContainer.classList.remove('show');
+  navContainer.classList.remove('show');
+  body.style.overflow = '';
 });
 
 
