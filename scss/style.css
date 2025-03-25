@@ -1224,4 +1224,74 @@ footer .line-c {
   .home-page .testimonial-section .testimonial-box .name {
     font-size: 18px;
   }
+}
+
+.our-story-page .page-content .banner-container {
+  background: linear-gradient(180deg, #300843 -31.86%, #FF3465 137.55%);
+  border-radius: 0 0 30px 30px;
+  color: #fff;
+  height: 704px;
+  position: relative;
+}
+.our-story-page .page-content .banner-container .smoke {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: screen;
+}
+.our-story-page .page-content .banner-container .banner-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  padding: 50px 0;
+}
+.our-story-page .page-content .banner-container .banner-wrapper .banner-title {
+  font-weight: 500;
+  font-size: 34.11px;
+  line-height: 45.88px;
+  white-space: pre-line;
+}
+.our-story-page .page-content .banner-container .banner-wrapper .banner-title .name {
+  font-size: 46.68px;
+}
+.our-story-page .page-content .card-container .card-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.our-story-page .page-content .card-container .card-wrapper .card-box {
+  border: 2px solid #FF3465;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 49px 94px;
+}
+.our-story-page .page-content .card-container .card-wrapper .card-box ~ .card-box {
+  margin-top: 30px;
+}
+.our-story-page .page-content .card-container .card-wrapper .card-box .card-img {
+  border-radius: 50%;
+  width: 267px;
+  height: 267px;
+}
+.our-story-page .page-content .card-container .card-wrapper .card-box .card-info-w .card-name {
+  color: #9F1F6B;
+  font-weight: 600;
+  font-size: 34.11px;
+  line-height: 45.88px;
+}
+.our-story-page .page-content .card-container .card-wrapper .card-box .card-info-w .card-description {
+  color: #2B2B2B;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 18.51px;
+  text-align: justify;
+  max-width: 637px;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
