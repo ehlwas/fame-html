@@ -1425,15 +1425,23 @@ footer {
             .card-wrapper {
                 max-width: 1400px;
                 margin: 0 auto;
-                padding: 30px 0;
+                padding: 30px;
 
                 .card-box {
                     border: 2px solid #FF3465;
                     border-radius: 10px;
                     display: flex;
                     align-items: center;
-                    justify-content: space-around;
+                    justify-content: center;
+                    gap: 80px;
                     padding: 49px 94px;
+                        
+                    @media (max-width: 1000px) {
+                        gap: 30px;
+                        align-items: center;
+                        flex-direction: column;
+                        padding: 41px 49px;
+                    }
 
                     & ~ .card-box {
                         margin-top: 30px;
@@ -1452,6 +1460,13 @@ footer {
                             font-weight: 600;
                             font-size: 34.11px;
                             line-height: 45.88px;
+
+                            @media (max-width: 1000px) {
+                                font-weight: 600;
+                                font-size: 34.11px;
+                                line-height: 45.88px;
+                                text-align: center;
+                            }
                         }
 
                         .card-description {
@@ -1462,7 +1477,84 @@ footer {
                             text-align: justify;
                             max-width: 637px;
                             margin-top: 20px;
-                            // white-space: pre-line;
+
+                            @media (max-width: 1000px) {
+                                font-weight: 400;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .mission-vision-container {
+            background-color: #F4F4F4;
+
+            .mission-vision-wrapper {
+                max-width: 1400px;
+                margin: 0 auto;
+                min-height: 574px;
+                display: flex;
+                justify-content: center;
+                gap: 80px;
+                padding: 108px 30px;
+                position: relative;
+
+                @media (max-width: 1000px) {
+                    gap: 30px;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                .img-section {
+                    border-radius: 19.34px;
+                    max-width: 499px;
+                    width: 100%;
+                    height: 369px;
+
+                    @media (max-width: 1000px) {
+                        height: auto;
+                    }
+                }
+
+                .info-wrapper {
+                    max-width: 564px;
+                    width: 100%;
+
+                    @media (max-width: 1000px) {
+                        max-width: unset;
+                    }
+
+                    .section-title {
+                        font-weight: 500;
+                        font-size: 44.47px;
+                        line-height: 59.82px;
+                        text-align: left;
+                        margin-bottom: 14px;
+
+                        @media (max-width: 1000px) {
+                            position: absolute;
+                            top: 43px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            font-weight: 500;
+                            font-size: 30px;
+                            line-height: 40px;
+                            text-align: center;
+                            white-space: nowrap;
+                        }
+                    }
+
+                    .text {
+                        color: #300843;
+                        margin-top: 12px;
+                            
+                        @media (max-width: 1000px) {
+                            font-family: Inter;
+                            font-weight: 400;
+                            font-size: 18px;
+                            text-align: justify;
                         }
                     }
                 }
