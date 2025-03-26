@@ -49,3 +49,12 @@ new Swiper('#recentEventsSwiper', {
         },
     },
 })
+
+new Swiper('#imageSlides', {
+    direction: 'horizontal', // Change to 'horizontal' if needed
+    slidesPerView: 'auto',
+    autoHeight: true,
+    spaceBetween: 30,
+    allowTouchMove: true,
+    freeMode: true,
+})
