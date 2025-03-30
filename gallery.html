@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://kit.fontawesome.com/f5bf1013c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="headerNavigation">
+        <nav id="navContainer">
+            <div class="logo-container">
+                <a href="/">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="right-side">
+                <div id="mobileCloseBtn" class="mobile-close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <ul class="navigation-items-w">
+                    <li class="nav-item">
+                        <a href="/our-story.html">
+                            <span class="label">
+                                Our Story
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <span class="label">
+                                The Talent Hub
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/our-events.html">
+                            <span class="label">
+                                Our Events
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <span class="label">
+                                Gallery
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown-nav">
+                        <span class="label">
+                            Connect
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="#">
+                                <span class="dd-label">
+                                    Sponsors
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span class="dd-label">
+                                    Featured In
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span class="dd-label">
+                                    Contact
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+    
+                <div class="contact-us-btn-w">
+                    <button class="btn primary">
+                        <img src="assets/images/icons/phone-message.png" />
+                        Contact us
+                    </button>
+                </div>
+
+            </div>
+
+            <div id="mobileNavBtn" class="mobile-nav-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="gallery-page">
+
+        <div class="page-content">
+            
+            <section class="banner-container">
+                <img 
+                    src="/assets/images/our-events/bg-our-events.png"
+                    class="bg-img"
+                />
+        
+                <div class="banner-wrapper">
+                    <h2 class="section-title">
+                        <strong>F.A.M.E.</strong> Gallery: A Talent Showcase
+                    </h2>
+                    <p class="section-description">
+                        Capturing the Magic, Passion, and Talent Behind the Spotlight
+                    </p>
+                </div>
+                
+            </section>
+
+            <div class="album-grid-container">
+
+                <div class="album-box" id="albumBox" data-album-id="album-1">
+                    <div class="img-wrapper">
+                        <div class="left-c">
+                            <div class="img-container one"></div>
+                            <div class="img-container two"></div>
+                        </div>
+                        <div class="img-container three"></div>
+                    </div>
+                    <div class="album-info-w">
+                        <p class="album-title">Lorem ipsum dolor sit</p>
+                        <p class="photo-count">59 Photos</p>
+                    </div>
+                </div>
+
+                <div class="album-box" id="albumBox" data-album-id="album-2">
+                    <div class="img-wrapper">
+                        <div class="left-c">
+                            <div class="img-container one"></div>
+                            <div class="img-container two"></div>
+                        </div>
+                        <div class="img-container three"></div>
+                    </div>
+                    <div class="album-info-w">
+                        <p class="album-title">Lorem ipsum dolor sit</p>
+                        <p class="photo-count">59 Photos</p>
+                    </div>
+                </div>
+
+                <div class="album-box" id="albumBox" data-album-id="album-3">
+                    <div class="img-wrapper">
+                        <div class="left-c">
+                            <div class="img-container one"></div>
+                            <div class="img-container two"></div>
+                        </div>
+                        <div class="img-container three"></div>
+                    </div>
+                    <div class="album-info-w">
+                        <p class="album-title">Lorem ipsum dolor sit</p>
+                        <p class="photo-count">59 Photos</p>
+                    </div>
+                </div>
+
+                <div class="album-box" id="albumBox" data-album-id="album-4">
+                    <div class="img-wrapper">
+                        <div class="left-c">
+                            <div class="img-container one"></div>
+                            <div class="img-container two"></div>
+                        </div>
+                        <div class="img-container three"></div>
+                    </div>
+                    <div class="album-info-w">
+                        <p class="album-title">Lorem ipsum dolor sit</p>
+                        <p class="photo-count">59 Photos</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div id="modal-root">
+        <!-- <div class="gallery-modal">
+
+            <div class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="gallery-slideshow-container">
+                <div class="displayed-image-c">
+                    <img src="/assets/images/home/exp-1.png" />
+                </div>
+                
+                <div class="swiper" id="imageSlides">
+    
+                    <div class="swiper-wrapper">
+    
+                        <div class="swiper-slide">
+    
+                            <div class="img-container">
+                                <img src="/assets/images/home/exp-1.png" />
+                            </div>
+                            
+                        </div>
+    
+                        <div class="swiper-slide">
+    
+                            <div class="img-container">
+                                <img src="/assets/images/home/exp-1.png" />
+                            </div>
+                            
+                        </div>
+    
+                        <div class="swiper-slide">
+    
+                            <div class="img-container">
+                                <img src="/assets/images/home/exp-1.png" />
+                            </div>
+                            
+                        </div>
+    
+                        <div class="swiper-slide">
+    
+                            <div class="img-container">
+                                <img src="/assets/images/home/exp-1.png" />
+                            </div>
+                            
+                        </div>
+    
+                        <div class="swiper-slide">
+    
+                            <div class="img-container">
+                                <img src="/assets/images/home/exp-1.png" />
+                            </div>
+                            
+                        </div>
+    
+                        <div class="swiper-slide">
+    
+                            <div class="img-container">
+                                <img src="/assets/images/home/exp-1.png" />
+                            </div>
+                            
+                        </div>
+    
+                        <div class="swiper-slide">
+    
+                            <div class="img-container">
+                                <img src="/assets/images/home/exp-1.png" />
+                            </div>
+                            
+                        </div>
+    
+                        <div class="swiper-slide">
+    
+                            <div class="img-container">
+                                <img src="/assets/images/home/exp-1.png" />
+                            </div>
+                            
+                        </div>
+    
+                        <div class="swiper-slide">
+    
+                            <div class="img-container">
+                                <img src="/assets/images/home/exp-1.png" />
+                            </div>
+                            
+                        </div>
+    
+                        <div class="swiper-slide">
+    
+                            <div class="img-container">
+                                <img src="/assets/images/home/exp-1.png" />
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div> -->
+    </div>
+    
+    <footer>
+        <img src="/assets/images/footer/bg-footer.png" class="bg-footer">
+        <div class="footer-group">
+            <div class="row-f">
+                <div class="left-side">
+                    <p class="ready">Ready to have some fun?</p>
+                    <p class="get-in">Get in touch with us!</p>
+                    <p class="contact-no">+971 50 694 5330</p>
+                    <div class="contact-group">
+                        <a href="/" class="btn primary">Contact Us</a>
+                        <img src="/assets/images/icons/facebook.png" />
+                        <img src="/assets/images/icons/instagram.png" />
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <p class="quicklinks-title">Quick Links</p>
+
+                    <ul class="links-list">
+                        <li>Our Story</li>
+                        <li>The Talent Hub</li>
+                        <li>Our Events</li>
+                        <li>Experience</li>
+                        <li>Sponsors</li>
+                        <li>Featured In</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="line-c"></div>
+        
+        <div class="footer-group">
+            <div class="logo-footer-wrapper">
+                <img src="/assets/images/fame-footer-logo.png" />
+                <img src="/assets/images/vogue-logo.png" />
+            </div>
+
+            <div class="copy-right">
+                <p>
+                    <span>©</span> <strong>PVEDUBAI | FAME</strong> 2025 |
+                </p>
+                <span class="powered-by">powered by <img src="/assets/images/div-logo.png" class="div-logo" /></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/gallery-script.js"></script>
+    <script type="module" src="/js/swiper-initial.js"></script>
+</body>
+</html>
